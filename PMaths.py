@@ -109,6 +109,27 @@ while True:
                 print T
                 print "\n Golden Ratio  doesn't exist between these 2 digits"   
 
+  elif Input == "5":
+
+        print "\n insert a number (integer only)"
+        n = int(raw_input("> "))
+
+        print str(math.factorial(n))
+
+
+    elif Input == "6":
+
+        print "\n How many terms to generate?"
+
+        x = int(raw_input("> "))
+        a = [0,1]
+
+        for n in range(1,x):
+
+            a.append(a[n]+a[n-1])
+            print a[-1]
+
+
 
 
 
