@@ -31,7 +31,8 @@ A project to perform mathematical calculations like generating Pi or applying go
 
 **Changelog :**
 >>V1.0
->>-Initial release
+
+>> - Initial release
 
 **Downloads & more:**
 
