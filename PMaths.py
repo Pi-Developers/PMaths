@@ -35,6 +35,20 @@ def calc(n):
 ##########################
 
 
+def generate_pascal_triangle(rows):
+    if rows == 1: return [[1]]
+
+    triangle = [[1], [1, 1]] # pre-populate with the first two rows
+
+    row = [1, 1] # Starts with the second row and calculate the next
+
+    for i in range(2, rows):
+        row = [1] + [sum(column) for column in zip(row[1:], row)] + [1]
+        triangle.append(row)
+
+    return triangle
+
+##########################
 while True:
 
 
