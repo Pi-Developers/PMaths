@@ -206,22 +206,31 @@ while True:
 
 
     elif Input == "9" :
-        print "\n Choose conversion type\n\t1-Binary\n\t2-Octal\n\t3-Hex "
+        print "\n Choose conversion type\n\t1-Binary\n\t2-Hex "
  
         n = raw_input("> ")
         if n == "1" :
             print "\n Enter Binary"
+            mm = raw_input("> ")
+            x = int( mm , 2)
+            print  binascii.unhexlify('%x' % x)
 
 
         elif n == "3" :
             print "\n Enter Hex"
-
-
-        elif n == "2" :
-            print "\n Enter Octal"
+            mm = raw_input("> ")
+            print  mm.decode('hex')
 
 
 ##########################
+
+    elif Input == "10" :
+            print "\n How many rows of pascal's triangle to generate ? (limit 10 million)"
+            mm = int(raw_input("> "))
+
+            for row in generate_pascal_triangle(mm):
+                print row
+
 
 
 
