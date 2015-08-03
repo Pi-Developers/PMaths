@@ -2,6 +2,9 @@
 
 A project to perform mathematical calculations like generating Pi or applying golden ratio.
 
+**current version : 1.0**
+
+
 
 **Goal :**
 - To provide a user friendly tool that can do some simple and complex maths.
@@ -26,6 +29,9 @@ A project to perform mathematical calculations like generating Pi or applying go
 - Add Pascal triangle
 - Even more...
 
+**Changelog :**
+>>V1.0
+>>-Initial release
 
 **Downloads & more:**
 
