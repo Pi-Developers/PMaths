@@ -18,7 +18,8 @@ A project to perform mathematical calculations like generating Pi or applying go
 - Compute Fibonnaci series
 - Text to Binary/Hex encoder
 - Decimal to Octal encoder
-- 
+
+
 **To-Do List :**
 - Add basic calculus
 - Add GUI Version
