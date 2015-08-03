@@ -18,10 +18,15 @@ A project to perform mathematical calculations like generating Pi or applying go
 - Compute Fibonnaci series
 - Text to Binary/Hex encoder
 - Decimal to Octal encoder
-
+- Decoder (binary/hec to string)
 
 **To-Do List :**
 - Add basic calculus
 - Add GUI Version
 - Add Pascal triangle
 - Even more...
+
+
+**Downloads & more:**
+
+Check project's page : http://pi-developers.github.io/PMaths/
