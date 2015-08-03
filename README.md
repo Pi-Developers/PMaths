@@ -14,12 +14,13 @@ A project to perform mathematical calculations like generating Pi or applying go
 - Check the divisiblity of a number by other one.
 - Check the existence of golden ratio.
 - Check odd or even.
-
-
+- Compute Pi till first 10 million digit
+- Compute Fibonnaci series
+- Text to Binary/Hex encoder
+- Decimal to Octal encoder
+- 
 **To-Do List :**
 - Add basic calculus
-- Add Pi Generator
 - Add GUI Version
-- Add Fibonnaci series
 - Add Pascal triangle
 - Even more...
