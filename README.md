@@ -24,7 +24,7 @@ A project to perform mathematical calculations like generating Pi or applying go
 - Compute Fibonnaci series
 - Text to Binary/Hex encoder
 - Decimal to Octal encoder
-- Decoder (binary/hec to string)
+- Decoder (binary/hex to string)
 
 **To-Do List :**
 - Add basic calculus
