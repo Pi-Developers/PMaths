@@ -2,6 +2,9 @@
 
 A project to perform mathematical calculations like generating Pi or applying golden ratio.
 
+![alt tag](https://pbs.twimg.com/media/CSh8aruW4AAt3rf.png)
+
+
 **current version : 1.0**
 
 
