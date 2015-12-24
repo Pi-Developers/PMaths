@@ -25,6 +25,9 @@ A project to perform mathematical calculations like generating Pi or applying go
 - Text to Binary/Hex encoder
 - Decimal to Octal encoder
 - Decoder (binary/hex to string)
+- Solve quadratic equations in R
+- Calculate logarithms (Natural, Base 10, Base n)
+
 
 **To-Do List :**
 - Add basic calculus
@@ -36,6 +39,13 @@ A project to perform mathematical calculations like generating Pi or applying go
 >>V1.0
 
 >> - Initial release
+
+>>V1.1
+
+>> - Added quadratic equations solver
+>> - Added logarithms calculator
+>> - Bug fixes and code improvements
+
 
 **Downloads & more:**
 
