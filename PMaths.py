@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
-# Copyright Pi-Developers
-# @author Mohamed rashad
+
+# @author Mohamed Rashad
 
 import sys
 import math
@@ -31,11 +31,10 @@ def calc(n):
 
     return pi
 
-
 ##########################
 
-
 def generate_pascal_triangle(rows):
+
     if rows == 1: return [[1]]
 
     triangle = [[1], [1, 1]] # pre-populate with the first two rows
@@ -49,17 +48,21 @@ def generate_pascal_triangle(rows):
     return triangle
 
 ##########################
+
+
 while True:
 
 
+    print "\n\n               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n                    "   
+    print "PMaths  (Ultimate Python Maths App) \n\n\n               "
+    print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
-    print "\n\n   ~~~~~~~~~~~~~~~~~~ PMaths Tool (Ultimate Python Maths App) ~~~~~~~~~~~~~~~~~~~"
-
-    print "\n Would you like to do..?\n\t1-check even or odd\n\t2-check prime number or not\n\t3-Check Divisbility\n\t4-Check golden ratio\n\t5-Compute Factorial\n\t6-Compute Fibonacci series\n\t7-Compute Pi (Limit 10 million)\n\t8-Encode Text \n\t9-Decode To text"
+    print "\n     Would you like to do..?"
+    print "\n\n\t1-check even or odd      2-check prime number or not\n\t3-Check Divisbility      4-Check golden ratio\n\t5-Compute Factorial      6-Compute Fibonacci series\n\t7-Compute Pi             8-Encode Text \n\t9-Decode To text         10-Compute Pascal's Triangle\n\t11-Solve a quadratic equation   12-Logarithms Calculator"
 
     print "\n Choose your Option:"
 
-    Input = raw_input("> ")
+    Input = raw_input(" > ")
 
 ##########################
 
@@ -67,12 +70,12 @@ while True:
 
         print "\n Enter Desired Number Here"
 
-        Input2 = int(raw_input("> "))
+        Input2 = int(raw_input(" > "))
 
         if Input2 %2 != 0: 
-            print "Your input is odd"
+            print " Your input is odd"
         else:
-            print "Your number is even"
+            print " Your number is even"
 
 ##########################
 
@@ -88,14 +91,14 @@ while True:
 
                 if Input2 % i == 0 and i != Input2 and i != 1:
 
-                    print "This is not a Prime Number"
+                    print " This is not a Prime Number"
 
                 else:
 
-                    print "This is a Prime Number"
+                    print " This is a Prime Number"
 
         else:
-            print "This is not a Prime Number"
+            print " This is not a Prime Number"
 
 ##########################
 
@@ -103,12 +106,12 @@ while True:
 
         print "\n Enter Desired Number Here"
 
-        Input2 = int(raw_input("> "))
+        Input2 = int(raw_input(" > "))
 
 
         print "\n Enter number to be divided with"
 
-        Input4 = int(raw_input("> "))
+        Input4 = int(raw_input(" > "))
 
 
 
@@ -126,22 +129,22 @@ while True:
 
         print "\n insert first number (must be larger than the second)"
 
-        n = float(raw_input("> "))
+        n = float(raw_input(" > "))
 
         print "\n insert second number"
 
-        m = float(raw_input("> "))
+        m = float(raw_input(" > "))
 
         if m > n:
 
             print "\n insert numbers correctly and try again"
             print "\n\n insert first number (must be larger than the second)"
 
-            n = float(raw_input("> "))
+            n = float(raw_input(" > "))
 
             print "\n insert second number"
 
-            m = float(raw_input("> "))     
+            m = float(raw_input(" > "))     
         
         else:
 
@@ -149,9 +152,9 @@ while True:
             T = n/m
             Q = float("{0:.1f}".format(T))
      
-            if Q > 1.6 and Q < 1.7:
+            if Q > 1.68 and Q < 1.69:
 
-                print "\n Golden Ratio exists between these 2 digits (approximately)"
+                print "\n Golden Ratio approximately exists between these 2 digits"
 
             else:
 
@@ -166,7 +169,7 @@ while True:
     elif Input == "5":
 
         print "\n insert a number (integer only)"
-        n = int(raw_input("> "))
+        n = int(raw_input(" > "))
 
         print str(math.factorial(n))
 
@@ -184,7 +187,10 @@ while True:
             a.append(a[n]+a[n-1])
             print a[-1]
 
+##########################
+
     elif Input == "7" :
+
         print "\n How many digits of pi to generate ? (limit 10 million)"
         n = int(raw_input("> "))
         print "\n"
@@ -199,6 +205,7 @@ while True:
         print "\n Choose conversion type\n\t1-Binary\n\t2-Octal\n\t3-Hex "
  
         n = raw_input("> ")
+
         if n == "1" :
             print "\n Enter Text"
             mm = raw_input("> ")
@@ -230,7 +237,7 @@ while True:
             print  binascii.unhexlify('%x' % x)
 
 
-        elif n == "3" :
+        elif n == "2" :
             print "\n Enter Hex"
             mm = raw_input("> ")
             print  mm.decode('hex')
@@ -239,12 +246,55 @@ while True:
 ##########################
 
     elif Input == "10" :
-            print "\n How many rows of pascal's triangle to generate ? (limit 10 million)"
+        print "\n How many rows of pascal's triangle to generate ? (limit 10 million)"
+        mm = int(raw_input("> "))
+
+        for row in generate_pascal_triangle(mm):
+            print row
+
+
+##########################
+
+    elif Input == "11" :
+        print "Enter coffecients a,b and c"
+
+        a = int(raw_input("> "))           
+        b = int(raw_input("> "))
+        c = int(raw_input("> "))
+
+        dplus = (-b + sqrt( pow(b, 2) - (4 * a * c) )) / ( 2*a)
+        dminus = (-b - sqrt( pow(b, 2) - (4 * a * c) )) / (2*a)
+
+        print dplus
+        print dminus
+
+
+##########################
+
+    elif Input == "12" :
+        print "Choose an option:\n\t1-Base n\n\t2-base 10\n\t3-natural logarithm"
+        
+        n = raw_input("> ")
+
+        if n == "1" :
+            print "\n Enter number"
             mm = int(raw_input("> "))
+            print "\n Enter base"
+            mn = int(raw_input("> "))
+            x = log(mm,mn)
+            print  "Logarithm(%d) base(%d) = %d" %(mm,mn,x)
 
-            for row in generate_pascal_triangle(mm):
-                print row
+        elif n == "2" :
+            print "\n Enter number"
+            mm = int(raw_input("> "))
+            x = log10(mm)
+            print  "Log(%d) = %d" %(mm,x)
 
+        elif n == "3" :
+            print "\n Enter number"
+            mm = int(raw_input("> "))
+            x = log(mm)
+            print  "Ln(%d) = %d" %(mm,x)
 
 
 
