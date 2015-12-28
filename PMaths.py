@@ -56,9 +56,13 @@ while True:
     print "\n\n               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n                    "   
     print "PMaths  (Ultimate Python Maths App) \n\n\n               "
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-
     print "\n     Would you like to do..?"
-    print "\n\n\t1-check even or odd      2-check prime number or not\n\t3-Check Divisbility      4-Check golden ratio\n\t5-Compute Factorial      6-Compute Fibonacci series\n\t7-Compute Pi             8-Encode Text \n\t9-Decode To text         10-Compute Pascal's Triangle\n\t11-Solve a quadratic equation   12-Logarithms Calculator"
+    print "\n\n\t1-check even or odd      2-check prime number or not\n\t"
+    print "3-Check Divisbility      4-Check golden ratio\n\t"
+    print "5-Compute Factorial      6-Compute Fibonacci series\n\t"
+    print "7-Compute Pi             8-Encode Text \n\t"
+    print "9-Decode To text         10-Compute Pascal's Triangle\n\t"
+    print "11-Solve a quadratic equation   12-Logarithms Calculator"
 
     print "\n Choose your Option:"
 
@@ -295,6 +299,7 @@ while True:
             mm = int(raw_input("> "))
             x = log(mm)
             print  "Ln(%d) = %d" %(mm,x)
+
 
 
 
