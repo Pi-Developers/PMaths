@@ -4,7 +4,7 @@ A project to perform mathematical calculations like generating Pi or applying go
 
 
 
-**current version : 1.0**
+**current version : 1.1**
 
 
 
@@ -26,13 +26,12 @@ A project to perform mathematical calculations like generating Pi or applying go
 - Decoder (binary/hex to string)
 - Solve quadratic equations in R
 - Calculate logarithms (Natural, Base 10, Base n)
-
+-  Pascal triangle
 
 **To-Do List :**
 - Add basic calculus
 - Add GUI Version
-- Add Pascal triangle
-- Even more...
+>> - Even more...
 
 **Changelog :**
 >>V1.0
@@ -44,6 +43,7 @@ A project to perform mathematical calculations like generating Pi or applying go
 >> - Added quadratic equations solver
 >> - Added logarithms calculator
 >> - Bug fixes and code improvements
+>> - Added Pascal triangle
 
 
 **Downloads & more:**
